@@ -1,0 +1,26 @@
+1. go to console.cloud.google.com
+2. click in box, roght to google cloud logo and create new project.
+3. Give name to project and click on create.
+4. Select the project from notification.
+5. Click on activate cloud shell left of notification symbol and right of search button. The terminal will open.
+6. enter command: gcloud projects list
+	click on authorize
+	you will get project name, project id.
+7. Now in top search bar, search for "app engine admin api" (first under marketplace) and click on it.
+8. enable it and come back in cloud shell.
+9. enter command: gcloud config set project project_ID
+10. enter command: gcloud app create
+11. choose server 7
+12. enter command: git clone https://github.com/GoogleCloudPlatform/python-docs-samples
+13. enter command: ls
+14. enter command: cd python-docs-samples
+15. enter command: ls
+16. enter command: cd appengine
+17. enter command: ls
+18. enter command: cd standard_python3
+18. enter command: ls
+19. enter command: cd hello_world
+20. enter command: ls
+21. enter command: python3 main.py
+22. locate "Running on http://127.0.0.1:8080" and click on it. It will open new window with localhost.
+23. click ctrl+c to end shell.
