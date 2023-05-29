@@ -1,0 +1,27 @@
+Unit XV: Case Study – Amazon EC2
+Amazon Elastic Compute Cloud (EC2)
+
+
+Elastic IP addresses allow you to allocate a static IP address and programmatically assign it to an instance. You can enable monitoring on an Amazon EC2 instance using Amazon CloudWatch2 in order to gain visibility into resource utilization, operational performance, and overall demand patterns (including metrics such as CPU utilization, disk reads and writes, and network traffic). You can create Auto-scaling Group using the Auto-scaling feature3 to automatically scale your capacity on certain conditions based on metric that Amazon CloudWatch collects. You can also distribute incoming traffic by creating an elastic load balancer using the Elastic Load Balancing4 service. Amazon Elastic Block Storage (EBS)5 volumes provide network-attached persistent storage to Amazon EC2 instances. Point-in-time consistent snapshots of EBS volumes can be created and stored on Amazon Simple Storage Service (Amazon S3)6.
+Amazon S3 is highly durable and distributed data store. With a simple web services interface, you can store and retrieve large amounts of data as objects in buckets (containers) at any time, from anywhere on the web using standard HTTP verbs. Copies of objects can be distributed and cached at 14 edge locations around the world by creating a distribution using Amazon CloudFront7 service – a web service for content delivery (static or streaming content). Amazon SimpleDB8 is a web service that provides the core functionality of a database- real-time lookup and simple querying of structured data – without the operational complexity. You can organize the dataset into domains and can run queries across all of the data stored in a particular domain. Domains are collections of items that are described by attribute-value pairs.
+
+Amazon Relational Database Service9 (Amazon RDS) provides an easy way to setup, operate and scale a relational database in the cloud. You can launch a DB Instance and get access to a full-featured MySQL database and not worry about common database administration tasks like backups, patch management etc.
+Amazon Simple Queue Service (Amazon SQS)10 is a reliable, highly scalable, hosted distributed queue for storing messages as they travel between computers and application components.
+
+Amazon Simple Notifications Service (Amazon SNS) provides a simple way to notify applications or people from the cloud by creating Topics and using a publish-subscribe protocol.
+
+Amazon Elastic MapReduce provides a hosted Hadoop framework running on the web-scale infrastructure of Amazon Elastic Compute Cloud (Amazon EC2) and Amazon Simple Storage Service (Amazon S3) and allows you to create customized JobFlows. JobFlow is a sequence of MapReduce steps.
+
+Amazon Virtual Private Cloud (Amazon VPC) allows you to extend your corporate network into a private cloud contained within AWS. Amazon VPC uses IPSec tunnel mode that enables you to create a secure connection between a gateway in your data center and a gateway in AWS.
+
+Amazon Route53 is a highly scalable DNS service that allows you manage your DNS records by creating a HostedZone for every domain you would like to manage.
+
+AWS Identity and Access Management (IAM) enable you to create multiple Users with unique security credentials and manage the permissions for each of these Users within your AWS Account. IAM is natively integrated into AWS Services. No service APIs have changed to support IAM, and exiting applications and tools built on top of the AWS service APIs will continue to work when using IAM.
+AWS also offers various payment and billing services that leverages Amazon’s payment infrastructure.
+
+All AWS infrastructure services offer utility-style pricing that require no long-term commitments or contracts. For example, you pay by the hour for Amazon EC2 instance usage and pay by the gigabyte for storage and data transfer in the case of Amazon S3. More information about each of these services and their pay-as-you-go pricing is available on the AWS Website.
+Note that using the AWS cloud doesn’t require sacrificing the flexibility and control you’ve grown accustomed to:
+You are free to use the programming model, language, or operating system (Windows, OpenSolaris or any flavor of Linux) of your choice.
+You are free to pick and choose the AWS products that best satisfy your requirements—you can use any of the services individually or in any combination.
+Because AWS provides resizable (storage, bandwidth and computing) resources, you are free to consume as much or as little and only pay for what you consume.
+You are free to use the system management tools you’ve used in the past and extend your datacenter into the cloud.
